@@ -35,18 +35,18 @@ public class CodeCheck {
 
         if (!isFormatValid){
 
-            throw new IncorrectFormatException("Invalid Format of Input Code" +
+            throw new IncorrectFormatException("Incorrect Format " +
                     "(Please, check that your code has format " +
                     "XXXX-YYY-XXXX-YYY-XYXY " +
-                    "where X - numbers and Y - letters)," +
-                    "and you used only english letters!" +
-                    "Please, try again.");
+                    "where X - numbers and Y - letters), " +
+                    "and you used only english letters! " +
+                    "Be careful with the input.");
         }
 
         if (!isStartingNumbersValid){
-            throw new IncorrectFirstNumberException("Invalid Format of Input Code " +
+            throw new IncorrectFirstNumberException("Incorrect Format " +
                     "('1111' can't be at the begin of code)!" +
-                    " Please, try again.");
+                    " Be careful with the input.");
         }
     }
 }
